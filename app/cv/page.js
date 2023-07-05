@@ -1,9 +1,24 @@
 import React from 'react'
+import Image from 'next/image'
+import cvimage from '../cv/cv.jpg'
+import Header from '../header/header.js'
 
-const cv = () => {
+
+ 
+export default function Page() {
   return (
-    <div>cv</div>
-  )
+    <main>
+      <Header></Header>
+        <Image
+          src={cvimage}
+          width={700}
+          height={700}
+          alt="CV"
+        />
+    </main>
+  );
 }
 
-export default cv
+
+
+
